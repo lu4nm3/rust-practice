@@ -60,7 +60,9 @@ fn main() {
 
 
 
-    use std::net::{Ipv4Addr, Ipv6Addr};
+    struct Ipv4Addr {}
+
+    struct Ipv6Addr {}
 
     enum IpAddr {
         V4(Ipv4Addr),
@@ -71,13 +73,15 @@ fn main() {
 
     enum Message {
         Quit,
-        Move { x: i32, y: i32 },
+        Move { x: i32, y: i32 }, // includes anonymous struct
         Write(String),
         ChangeColor(i32, i32, i32),
     }
+
+
+
+    let some_number = Some(3);
+    let some_string = Some("a string");
+
+    let absent_number: Option<i32> = None;
 }
-
-
-
-
-
