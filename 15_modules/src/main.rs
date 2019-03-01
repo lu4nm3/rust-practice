@@ -1,27 +1,18 @@
-mod sound {
-    pub mod instrument {
-        pub fn clarinet() {
-
-        }
-    }
-
-    mod voice {
-
-    }
-
-    fn guitar() {
-
-    }
-}
-
-fn main() {
-    // absolute path
-    crate::sound::instrument::clarinet();
-
-    // relative path
-    sound::instrument::clarinet();
-}
-
+//mod sound {
+//    pub mod instrument {
+//        pub fn clarinet() {
+//
+//        }
+//    }
+//
+//    mod voice {
+//
+//    }
+//
+//    fn guitar() {
+//
+//    }
+//}
 
 
 
@@ -47,4 +38,16 @@ mod sound2 {
     fn breath_in() {
 
     }
+}
+
+
+
+mod sound;
+
+fn main() {
+    // absolute path
+    crate::sound::instrument::clarinet();
+
+    // relative path
+    sound::instrument::clarinet();
 }

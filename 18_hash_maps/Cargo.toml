@@ -1,8 +1,7 @@
 [package]
-name = "modules"
+name = "hash_maps"
 version = "0.1.0"
 authors = ["lu4nm3 <lmedina@lyft.com>"]
 edition = "2018"
 
 [dependencies]
-rand = "0.5.5"
